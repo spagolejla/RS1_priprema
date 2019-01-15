@@ -1,0 +1,53 @@
+﻿@using Ispit_2017_02_15.ViewModels
+@{
+    ViewData["Title"] = "Index";
+}
+@model OdrzaniCasDetaljiIndexVM
+<h2></h2>
+<table class="table tab-content">
+	<thead><tr>
+	<th>Student</th>
+	<th>Bodovi</th>
+	<th>Prisutan</th>
+	<th>Akcija</th>
+</tr>
+	</thead>
+	<tbody>
+		
+			@foreach (var x in Model.Rows)
+			{<tr>
+
+	<td>@x.Student</td>
+	<td>@x.Bodovi</td>
+	@if (x.Prisutan == false)
+	{
+		<td><a href="/OdrzaniCasDetalji/UcenikJePrisutan?id=@x.OdrzaniCasDetaljiId" class="btn-danger">Odustan</a></td>
+	}
+	else
+	{
+		<td><a href="/OdrzaniCasDetalji/UcenikJeOdsutan?id=@x.OdrzaniCasDetaljiId" class="btn-success">Prisutan</a></td>
+	}
+	@if (x.Prisutan == true)
+	{
+		<td><a class="aKlik1" atribut="@x.OdrzaniCasDetaljiId">Uredi</a></td>
+	}
+
+	<td></td>
+</tr>
+}
+	</tbody>
+</table>
+<script>
+	$(document).ready(function (parameters) {
+		$(".aKlik1").click(function (event) {
+			var btn = $(this);
+			var id = btn.attr("atribut");
+			$.get("/OdrzaniCasDetalji/Uredi?id=" + id,function (rezultat, status) {
+			$("#div1").html(rezultat);
+		 });
+
+		});
+
+
+	 });
+</script>

@@ -1,0 +1,39 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels
+@{
+    ViewData["Title"] = "Dodaj";
+}
+@model UputnicaDodajVM
+<h2>Nova uputnica</h2>
+
+@*@if (!ModelState.IsValid)
+{
+<span class="alert-danger">
+	@Html.ValidationSummary()
+</span>
+}*@
+<form asp-action="Snimi" asp-controller="Uputnica" method="post">
+	<div>
+		<label>
+			Uputio:
+		</label>
+		<select asp-items="@Model.ljekari" asp-for="@Model.ljekarId"></select>
+	</div>
+	<div>
+		<label>Datum:</label>
+		<input type="date" asp-for="@Model.DatumUputnie"required />
+	</div>
+	<div>
+		<label>
+			Pacijent:
+		</label>
+		<select asp-items="@Model.pacijenti" asp-for="@Model.pacijentId"></select>
+	</div>
+	<div>
+		<label>
+			Vrsta pretrage:
+		</label>
+		<select asp-items="@Model.vrstePretrage" asp-for="@Model.vrstaPretrageId"></select>
+	</div>
+	<input type="submit" value="Snimi" class="btn btn-primary"/>
+</form>
+

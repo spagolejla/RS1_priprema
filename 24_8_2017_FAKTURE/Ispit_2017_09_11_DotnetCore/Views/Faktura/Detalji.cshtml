@@ -1,0 +1,33 @@
+﻿@using Ispit_2017_09_11_DotnetCore.ViewModels;
+@{
+    ViewData["Title"] = "Detalji";
+}
+@model FakturaDetaljiVM
+<h1>Uredjivanje fakture	</h1>
+<h2>Podaci o fakturi</h2>
+
+
+	<div>
+		<label><bold>Klijent:</bold></label>
+		<input type="text" readonly value="@Model.Klijent"  style="border:none" />
+	</div>
+	<div>
+		<label><bold>Datum: </bold></label>
+		<input type="text" readonly value="@Model.Datum"  style="border:none"/>
+	</div>
+
+<div id="div1" >
+	
+</div>
+
+<script>
+$(document).ready(function(parameters) {
+	
+
+	$.get("/FakturaStavke/Index?id=@Model.FakturaID", function (rezultat, status) { 
+		$("#div1").html(rezultat);
+	});
+
+    });
+
+</script>

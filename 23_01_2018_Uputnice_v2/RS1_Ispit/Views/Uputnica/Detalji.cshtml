@@ -1,0 +1,37 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels
+@{
+    ViewData["Title"] = "Detalji";
+}
+@model UputnicaDetaljiVM
+<h2>Podaci o uputnici (readonly)</h2>
+<form>
+	<div>
+		<label>Datum uputnice: </label>
+		<input type="text"  value="@Model.DatumUputnice.ToString("dd.MM.yyyy")" readonly />
+	</div>
+	<div>
+		<label>Pacijent: </label>
+		<input type="text"  value="@Model.Pacijent" readonly />
+	</div>
+	<div>
+		<label>Datum rezultata: </label>
+		<input type="text"  value="@Model.DatumRezultata" readonly/>
+	</div>
+	<div>
+		<label>Zavrsen unos: </label>
+		<a href="/Uputnica/Zakljucaj/?id=@Model.UputnicaId" class="btn btn-primary">Zakljucaj</a>
+		<input type="text"  value="@Model.UputnicaId" hidden />
+	</div>
+</form>
+<div id="div1"></div>
+<script>
+	$(document).ready(function (parameters) { 
+		$.get("/RezultatiPretrage/Index?id=" +@Model.UputnicaId,function (rezultat, status) { 
+			$("#div1").html(rezultat);
+		});
+
+	});
+
+
+</script>
+

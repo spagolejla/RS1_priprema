@@ -1,0 +1,22 @@
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.csprojResolveAssemblyReference.cache
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.csproj.CoreCompileInputs.cache
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.AssemblyInfoInputs.cache
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.AssemblyInfo.cs
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.deps.json
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.runtimeconfig.json
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.runtimeconfig.dev.json
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.dll
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.pdb
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.dll
+C:\tmp\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.pdb
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.csprojResolveAssemblyReference.cache
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.csproj.CoreCompileInputs.cache
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.AssemblyInfoInputs.cache
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.AssemblyInfo.cs
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.dll
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.pdb
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.deps.json
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.runtimeconfig.json
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.runtimeconfig.dev.json
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.dll
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\rs1\RS1_Ispit_2018_01_23_asp.net_core\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.pdb

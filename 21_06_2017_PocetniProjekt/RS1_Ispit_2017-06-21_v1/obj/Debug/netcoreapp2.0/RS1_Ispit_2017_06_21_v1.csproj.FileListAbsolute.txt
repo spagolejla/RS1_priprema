@@ -1,0 +1,11 @@
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\bin\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.deps.json
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\bin\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.runtimeconfig.json
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\bin\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.runtimeconfig.dev.json
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\bin\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.dll
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\bin\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.pdb
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\obj\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.csprojResolveAssemblyReference.cache
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\obj\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.csproj.CoreCompileInputs.cache
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\obj\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.AssemblyInfoInputs.cache
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\obj\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.AssemblyInfo.cs
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\obj\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.dll
+E:\FIT\3.Godina\3.GODINA\Prvi smestar\RS1\PripremaZaIspit\MojiUradjeni\21_06_2017_PocetniProjekt\RS1_Ispit_2017-06-21_v1\obj\Debug\netcoreapp2.0\RS1_Ispit_2017_06_21_v1.pdb

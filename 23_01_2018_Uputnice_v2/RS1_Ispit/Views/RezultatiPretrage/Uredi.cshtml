@@ -1,0 +1,41 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels
+@{
+    ViewData["Title"] = "Uredi";
+}
+@model RezultatiPretrageUrediVM
+<h2>Uredi</h2>
+@if (Model.VrstaVr==0)
+{
+<form asp-action="Snimi" asp-controller="RezultatiPretrage">
+	<div>
+		<label>Pretraga;</label>
+		<input type="text" asp-for="@Model.Pretraga" value="@Model.Pretraga" readonly />
+	</div>
+	<div>
+		<label>Izmjerena vrijednost:</label>
+		<input type="text" asp-for="@Model.IzmjerenaVrijednost" value="@Model.IzmjerenaVrijednost" />
+	</div>
+	<input type="text" asp-for="@Model.RezultatPretrageId" value="@Model.RezultatPretrageId" hidden />
+	<input type="text" asp-for="@Model.UputnicaId" value="@Model.UputnicaId" hidden />
+	<input type="text" asp-for="@Model.VrstaVr" value="@Model.VrstaVr" hidden />
+	<input type="text" asp-for="@Model.ModalitetId" value="@Model.ModalitetId" hidden />
+	<input type="submit" value="Snimi" />
+</form>
+}
+@if(Model.VrstaVr==1){
+<form asp-action="Snimi" asp-controller="RezultatiPretrage">
+	<div>
+		<label>Pretraga;</label>
+		<input type="text" asp-for="@Model.Pretraga" value="@Model.Pretraga" readonly />
+	</div>
+	<div>
+		<label>Vrijednost:</label>
+		<select asp-items="@Model.Modaliteti" asp-for="@Model.ModalitetId"></select>
+	</div>
+	<input type="text" asp-for="@Model.RezultatPretrageId" value="@Model.RezultatPretrageId" hidden />
+	<input type="text" asp-for="@Model.UputnicaId" value="@Model.UputnicaId" hidden />
+	<input type="text" asp-for="@Model.VrstaVr" value="@Model.VrstaVr" hidden />
+	<input type="text" asp-for="@Model.IzmjerenaVrijednost" value="@Model.IzmjerenaVrijednost" hidden />
+<input type="submit" value="Snimi"/>
+</form>
+}

@@ -1,0 +1,29 @@
+﻿@using Ispit_2017_02_15.ViewModels;
+@{
+    ViewData["Title"] = "Index";
+}
+@model CasIndexVM
+<h2>Prikaz odrzanih casova za nastavnika</h2>
+<table class="table tab-content">
+	<thead>
+		<tr>
+			<th>Datum</th><th>Akademska godina</th><th>Broj prisutnih</th><th>Predmet</th><th>Prosjecna ocjena</th><th>Akcija</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var x in Model.Rows)
+		{
+		<tr>
+			<td>@x.Datum</td>
+			<td>@x.AkademskaGodina</td>
+			<td>@x.BrojStudenata  od @x.UkupnoStudenata </td>
+			<td>@x.Predmet</td>
+			<td>@x.ProsjenaOcjena</td>
+			<td><a href="/Cas/Uredi?id=@x.CasId">Uredi</a></td>
+
+		</tr>
+		}
+	</tbody>
+</table>
+<a href="/Cas/Dodaj" class="btn btn-primary">Dodaj</a>
+

@@ -1,0 +1,26 @@
+﻿@using Ispit_2017_09_11_DotnetCore.ViewModels
+@{
+    ViewData["Title"] = "Uredi";
+}
+@model FakturaStavkeUrediVM
+<h2>Uredi</h2>
+<form action="/FakturaStavke/SnimiPromjene">
+	<div>
+		<label>Proizvod:</label>
+		<select name="Proizvod">
+			@foreach (var x in Model.proizvodi)
+			{
+				<option value="@x.Value">@x.Text</option>
+			}
+		</select>
+	</div>
+	<div>
+		<label>Količina:</label>
+		<input type="text" name="Kolicina"  />
+	</div>
+	<input type="text" value="@Model.FakturaStavkaID" name="FakturaStavka" hidden/>
+
+	<input type="submit" class="btn btn-primary" value="SnimiPromjene" />
+
+</form>
+

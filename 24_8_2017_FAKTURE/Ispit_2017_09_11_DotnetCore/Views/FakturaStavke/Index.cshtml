@@ -1,0 +1,45 @@
+﻿@using Ispit_2017_09_11_DotnetCore.ViewModels;
+@{
+    ViewData["Title"] = "Index";
+}
+@model FakturaStavkeIndexVM
+<h2>Stavke fakture</h2>
+<table class="table tab-content">
+	<thead>
+		<tr>
+			<th>Proizvod</th><th>Cijena</th><th>Kolicina</th><th>Popust</th><th>Iznosa sa popustom</th><th>Akcija</th>
+		</tr>
+
+	</thead>
+	<tbody>
+		@foreach (var x in Model.Rows)
+		{
+		<tr>
+			<td>@x.proizvod</td>
+			<td>@x.cijena</td>
+			<td>@x.kolicina</td>
+			<td>@x.popust</td>
+			<td>@x.iznosSaPopustom</td>
+			<td><a class="aKlik1" atribut="@x.fakturaStavkaID">Uredi</a> |
+				<a href="/FakturaStavke/Obrisi?id=@x.fakturaStavkaID">Obrisi</a>
+			</td>
+		</tr>
+		}
+	</tbody>
+</table>
+<a href="/FakturaStavke/Dodaj?id=@Model.FakturaID" class="btn btn-primary">Dodaj</a>
+<script>
+	$(document).ready(function (parameters) {
+		$(".aKlik1").click(function () {
+			var btn = $(this);
+			var idZaUrediti = btn.attr("atribut");
+			$.get("/FakturaStavke/Uredi?id=" + idZaUrediti,
+				function (rezultat, status) {
+					$("#div1").html(rezultat);
+				}
+			);
+		});
+	});
+
+</script>
+

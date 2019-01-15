@@ -1,0 +1,39 @@
+﻿@using Ispit_2017_09_11_DotnetCore.ViewModels;
+@{
+    ViewData["Title"] = "Dodaj";
+}
+@model FakturaDodajVM
+<h2>Dodaj</h2>
+
+<form action="/Faktura/Snimi">
+	<div>
+		<label>Klijent: </label>
+		<select name="Klijent">
+			@foreach (var x in Model.klijenti)
+			{
+				<option value="@x.Value">@x.Text</option>
+
+			}
+		</select>
+	</div>
+
+	<div>
+		<label>Datum: </label>
+		<input type="date" name="Datum" />
+	</div>
+
+	<div>
+		<label>Kopiranje podataka iz pounude: </label>
+		<select name="Ponuda">
+			<option value="null">Nije odabrano</option>
+
+			@foreach (var x in Model.ponude)
+	{
+		<option value="@x.Value">@x.Text</option>
+
+}
+		</select>
+	</div>
+	<input type="submit" value="Snimi"/>
+</form>
+

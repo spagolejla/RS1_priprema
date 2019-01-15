@@ -1,0 +1,44 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels
+@{
+    ViewData["Title"] = "Dodaj";
+}
+@model UputnicaDodajVM
+<h2>Nova uputnica</h2>
+<form action="/Uputnica/Snimi" class="form-group">
+	<div class="form-group">
+		<label>Uputio</label>
+		<select class="form-control" name="ljekar">
+			@foreach (var x in Model.ljekari)
+			{
+				
+				<option value="@x.Value">@x.Text</option>
+			}
+		</select>
+	</div>
+	<div class="form-group">
+		<label>Datum uputnice:</label>
+		<input type="datetime" name="Datum" class="form-control"   required/>
+	</div>
+	<div class="form-group">
+		<label>Pacijent</label>
+		<select class="form-control" name="pacijent">
+			@foreach (var x in Model.pacijenti)
+			{
+				
+				<option value="@x.Value">@x.Text </option>
+			}
+		</select>
+	</div>
+	<div class="form-group">
+		<label>Vrsta pretrage</label>
+		<select class="form-control" name="pretraga">
+			@foreach (var x in Model.pretrage)
+			{
+				
+				<option value="@x.Value">@x.Text</option>
+			}
+		</select>
+	</div>
+	<input type="submit" value="Snimi" class="btn btn-primary"/>
+</form>
+

@@ -1,0 +1,54 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels
+@{
+	ViewData["Title"] = "Uredi";
+}
+@model RezultatPretrageUrediVM
+<h2>Evidentiranje rezultata</h2>
+@if (Model.vrstaVrijednosti.Equals("NumerickaVrijednost"))
+{
+<form action="/RezultatPretrage/Snimi" class="form-group">
+	<div class="form-group">
+
+		<input type="text" value="@Model.rezultatPretrageId" hidden name="rezultatPretrage" />
+		
+	</div>
+	<div class="form-group">
+		<label>Pretraga: </label>
+		<input type="text" value="@Model.pretraga" readonly />
+	</div>
+
+	<div class="form-group">
+		<label>Izmjerena vrijednosti: </label>
+		<input type="text" value="@Model.izmjerenaVrijednost" name="NumerickaVrijednost" />
+	</div>
+	<input type="submit" class="btn btn-primary" value="Snimi" />
+</form>
+}
+
+@if(Model.vrstaVrijednosti.Equals("Modalitet"))
+{
+<form action="/RezultatPretrage/Snimi" class="form-group">
+	<div>
+		<label>Pretraga: </label>
+		<input type="text" value="@Model.pretraga" readonly />
+	</div>
+
+	<div>
+		<select name="Modalitet">
+			@foreach (var x in Model.vrijednostiPretrage)
+			{
+				<option value="@x.Value">@x.Text</option>
+			}
+		</select>
+	</div>
+	<div>
+		
+	</div>
+	<input type="submit" class="btn btn-primary" value="Snimi" />
+</form>
+
+
+
+}
+
+

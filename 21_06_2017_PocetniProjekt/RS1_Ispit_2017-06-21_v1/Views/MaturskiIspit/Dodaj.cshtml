@@ -1,0 +1,35 @@
+﻿@using RS1_Ispit_2017_06_21_v1.ViewModels
+@{
+    ViewData["Title"] = "Dodaj";
+}
+@model MaturskiIspitDodajVM
+<h2>Novi maturski ispit</h2>
+@if (!ViewData.ModelState.IsValid) {
+	<span class="alert alert-danger">
+		@Html.ValidationSummary()
+	</span>
+
+}
+
+	<form asp-action="Snimi" asp-controller="MaturskiIspit" method="post">
+		<div>
+			<label>
+				Ispitivac:
+			</label>
+			<select asp-items="@Model.ispitivaci" asp-for="@Model.IspitivacId">
+
+			</select>
+		</div>
+		<div>
+			<label>Datum: </label>
+			<input type="datetime" asp-for="@Model.Datum" />
+		</div>
+		<div>
+			<label>Odjeljenje:  </label>
+			<select asp-items="@Model.odjeljenja" asp-for="@Model.odjeljenjeId">
+				
+			</select>
+		</div>
+		<input type="submit" value="Snimi" />
+	</form>
+

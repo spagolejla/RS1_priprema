@@ -1,0 +1,38 @@
+﻿@using Ispit_2017_02_15.ViewModels;
+@{
+    ViewData["Title"] = "Uredi";
+}
+@model CasUrediVM
+<h2>Uredi cas</h2>
+@if (!ViewData.ModelState.IsValid)
+{
+<span class="alert-danger">
+	@Html.ValidationSummary();
+</span>
+}
+<form asp-action="SnimiPromjene" asp-controller="Cas" >
+	<div>
+		<label>Nastavnik:</label>
+		<input type="text" asp-for="@Model.Nastavnik" value="@Model.Nastavnik" readonly />
+	</div>
+	<div>
+		<label>Datum:</label>
+		<input type="text" asp-for="@Model.Datum" value="@Model.Datum" />
+	</div>
+	<div>
+		<label>Ak. godina / Predmet:</label>
+		<input type="text" asp-for="@Model.AkPredmet" value="@Model.AkPredmet" readonly />
+	</div>
+	<input type="text" asp-for="@Model.CasId" value="@Model.CasId" hidden />
+
+	<input type="submit" value="Snimi promjene" />
+</form>
+<div id="div1"></div>
+<script>
+	$(document).ready(function (parameters) {
+		$.get("/OdrzaniCasDetalji/Index?id=" + @Model.CasId,function (rezultat, status) {
+			$("#div1").html(rezultat);
+		 });
+
+	 });
+</script>

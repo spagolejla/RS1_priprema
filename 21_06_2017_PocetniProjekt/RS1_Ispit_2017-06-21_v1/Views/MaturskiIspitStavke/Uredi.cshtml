@@ -1,0 +1,20 @@
+﻿@using RS1_Ispit_2017_06_21_v1.ViewModels;
+@{
+    ViewData["Title"] = "Uredi";
+}
+@model MaturskiIspitStavkeUrediVM
+<h2>Evidentiranje rezultata</h2>
+<form asp-action="SnimiPromjene" asp-controller="MaturskiIspitStavke" method="post">
+	<div>
+		<label>Ucenik:</label>
+		<input type="text" asp-for="@Model.Ucenik" readonly />
+	</div>
+	<div>
+		<label>Bodovi:</label>
+		<input type="text" asp-for="@Model.Bodovi" />
+	</div>
+	<input type="text" asp-for="@Model.MaturskiIspitId" hidden />
+	<input type="text" asp-for="@Model.MaturskiIspitStavkeId" hidden />
+	<input type="submit" value="Snimi" />
+</form>
+

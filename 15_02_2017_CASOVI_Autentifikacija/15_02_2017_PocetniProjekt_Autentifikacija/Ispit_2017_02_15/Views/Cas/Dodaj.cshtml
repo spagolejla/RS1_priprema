@@ -1,0 +1,38 @@
+﻿@using Ispit_2017_02_15.ViewModels
+@{
+    ViewData["Title"] = "Dodaj";
+}
+@model CasDodajVM
+<h2>Novi cas</h2>
+@if (!ViewData.ModelState.IsValid)
+{
+	<span class="alert-danger">
+		@Html.ValidationSummary()
+	</span>
+}
+<form asp-action="Snimi" asp-controller="Cas">
+	<div>
+		<label>
+			Nastavnik:
+		</label>
+		<input type="text" asp-for="@Model.Nastavnik" value="@Model.Nastavnik" readonly />
+
+	</div>
+	<div>
+		<label>
+			Datum:
+		</label>
+		<input type="text" asp-for="@Model.Datum" value="@Model.Datum" />
+
+	</div>
+	<div>
+		<label>
+			Ak. godina / Predmet:
+		</label>
+		<select asp-items="@Model.AkPredmeti" asp-for="@Model.AkPredmetId">
+
+		</select>
+
+	</div>
+	<input type="submit" value="Snimi" />
+</form>

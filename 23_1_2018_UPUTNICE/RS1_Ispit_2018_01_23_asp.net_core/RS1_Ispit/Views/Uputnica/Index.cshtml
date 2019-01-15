@@ -1,0 +1,36 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels;
+@{
+    ViewData["Title"] = "Index";
+}
+@model UputnicaIndexVM
+<h2>Prikaz uputnica</h2>
+<table class="table table-bordered">
+	<thead>
+		
+		<tr><td>Uputio </td><td>Pacijent </td><td>Vrsta pretrage </td><td>Datum evidentiranja rezultata </td><td>Akcija </td></tr>
+	</thead>
+	<tbody>
+		@foreach (var x in Model.Rows)
+	{
+		<tr>
+			<td>@x.uputio</td>
+			<td>@x.pacijent</td>
+			<td>@x.vrstaPretrage</td>
+			@if (x.datumRezultata == null)
+			{
+				<td>(nema rezultata)</td>
+			}
+			else
+			{
+           <td> @x.datumRezultata;
+			</td>}
+
+		<td><a href="/Uputnica/Detalji?id=@x.uputnicaID">Detalji</a> </td>
+
+	</tr>
+}
+
+	</tbody>
+</table>
+<a class="btn btn-primary" href="/Uputnica/Dodaj">Dodaj</a>
+

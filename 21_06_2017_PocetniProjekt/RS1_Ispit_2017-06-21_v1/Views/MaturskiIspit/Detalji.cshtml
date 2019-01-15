@@ -1,0 +1,33 @@
+﻿@using RS1_Ispit_2017_06_21_v1.ViewModels
+@{
+    ViewData["Title"] = "Detalji";
+}
+@model MaturskiIspitDetaljiVM
+<h2>Detalji maturskog ispita</h2>
+
+<form>
+	<div>
+		<label>Ispitivac: </label><input type="text" value="@Model.Ispitivac" readonly />
+	</div>
+	<div>
+		<label>Datum : </label><input type="text" value="@Model.Datum" readonly />
+	</div>
+	<div>
+		<label>Odjeljenje: </label><input type="text" value="@Model.odjeljenje" readonly />
+	</div>
+	<input type="text" value="@Model.MaturskiIspitId" hidden />
+</form>
+<div id="div1">
+
+</div>
+<script>
+	$(document).ready(function (parameters) { 
+		$.get("/MaturskiIspitStavke/Index?id=" +@Model.MaturskiIspitId,function (rezultat, status) { 
+
+			$("#div1").html(rezultat);
+		});
+
+	});
+
+</script>
+

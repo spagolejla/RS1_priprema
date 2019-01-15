@@ -1,0 +1,20 @@
+﻿@using Ispit_2017_02_15.ViewModels
+@{
+	ViewData["Title"] = "Uredi";
+}
+@model OdrzaniCasDetaljiUrediVM
+<h2></h2>
+<form asp-action="SnimiPromjene" asp-controller="OdrzaniCasDetalji">
+	<div>
+		<label>Student:</label>
+		<input type="text" asp-for="@Model.Student" value="@Model.Student" readonly />
+	</div>
+	<div>
+		<label>Bodovi:</label>
+		<input type="text" asp-for="@Model.Bodovi" value="@Model.Bodovi" />
+	</div>
+	<input type="text" asp-for="@Model.CasId" value="@Model.CasId"  />
+	<input type="text" asp-for="@Model.OdrzaniCasDetaljiId" value="@Model.OdrzaniCasDetaljiId"  />
+	<input type="submit" value="Snimi promjene" class="btn btn-primary" />
+</form>
+

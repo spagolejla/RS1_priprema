@@ -1,0 +1,66 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels
+
+@{
+	ViewData["Title"] = "Index";
+}
+@model RezultatiPretrageIndexVM
+<h2>Index</h2>
+<table class="table tab-content">
+	<thead>
+		<tr>
+			<th>Pretraga</th>
+			<th>Izmjerena vrijednost</th>
+			<th>JMJ</th>
+		
+			<th>Akcija</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var x in Model.Rows)
+		{
+		<tr>
+			<td>@x.Pretraga</td>
+			@if (x.NumerickaVrijednost != null)
+	{
+		<td>@x.NumerickaVrijednost</td>
+}
+			@if  (x.modalitet != null)
+	{
+		<td>@x.modalitet</td>
+			}
+			@if(x.modalitet != null && x.NumerickaVrijednost != null)
+			{
+				<td>(nije evidentirano)</td>
+			}
+
+			<td>@x.JMJ</td>
+			@if (Model.jelZakljucano==false) {
+			<td><a  class="Klik" atribut="@x.RezultatPretrageId">Uredi</a></td>
+			}
+			else
+			{
+				<td>Readonly</td>
+			}
+		</tr>
+		}
+	</tbody>
+</table>
+<script>
+	$(document).ready(function (parameters) {
+		$(".Klik").click(function (parameters) {
+			var btn = $(this);
+			var id = btn.attr("atribut").valueOf();
+
+			$.get("/RezultatiPretrage/Uredi?id=" +id,
+			function (rezultat, status) {
+			$("#div1").html(rezultat);
+		});
+		 });
+
+
+	});
+
+	
+
+
+</script>

@@ -1,0 +1,42 @@
+﻿@using RS1_Ispit_2017_06_21_v1.ViewModels;
+@{
+    ViewData["Title"] = "Index";
+}
+@model MaturskiIspitStavkeIndexVM
+<h2>Rezultati ispita:</h2>
+<table class="table tab-content">
+	<thead>
+		<tr>
+			<td>Ucenik</td><td>Opci uspjeh</td><td>Bodovi (max 100)</td><td>Oslobodjen</td><td>Akcija</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var x in Model.Rows)
+		{
+		<tr>
+			<td>@x.Ucenik</td>
+			<td>@x.OpciUspjeh</td>
+			<td>@x.Bodovi</td>
+			<td>@x.Oslobodjen</td>
+			<td><a  class="Klik" atr="@x.MaturskiIspitStavkaId">Uredi</a></td>
+
+
+		</tr>
+		}
+	</tbody>
+</table>
+<script>
+	$(document).ready(function (parameters) { 
+	
+		$(".Klik").click(function (event) { 
+			var a = $(this);
+			var id = a.attr("atr");
+			$.get("/MaturskiIspitStavke/Uredi?id=" + id, function (rezultat, status) { 
+				$("#div1").html(rezultat);
+
+			});
+		});
+		
+
+	});
+</script>

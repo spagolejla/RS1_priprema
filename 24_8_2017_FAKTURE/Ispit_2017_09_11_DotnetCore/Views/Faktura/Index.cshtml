@@ -1,0 +1,25 @@
+﻿@using Ispit_2017_09_11_DotnetCore.ViewModels;
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+@model FakturaIndexVM
+<h2>Prikaz faktura</h2>
+<table class="table table-condensed">
+	<thead>
+		<tr><td>Datum</td><td>Klijent</td><td>Akcija</td></tr>
+	</thead>
+	<tbody>
+		@foreach (var x in Model.Rows)
+		{
+			<tr>
+				<td>@x.datum</td>
+				<td>@x.klijent</td>
+				<td><a href="/Faktura/Detalji?id=@x.FakturaID">Detalji</a> | <a href="">Obrisi</a></td>
+			</tr>
+		}
+	</tbody>
+</table>
+<a href="/Faktura/Dodaj" class="btn btn-primary">Dodaj</a>
+
